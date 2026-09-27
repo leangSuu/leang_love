@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+  <div id="app">
+
+  <!-- MENU -->
+  <div id="menu">
+    <h1>Tic-Tac-Toe</h1>
+    <p>Choose Game Mode</p>
+
+    <div id="menu-actions">
+      <button id="two-player-btn">🎮 2 Players</button>
+      <button id="ai-btn">🤖 Play vs AI</button>
+    </div>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" style="display: none;">
+    <h1>Tic-Tac-Toe</h1>
+
+    <p id="status">Player X's turn</p>
+
+    <div id="board">
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+
+      <button class="cell"></button>
+      <button class="cell"></button>
+      <button class="cell"></button>
+
+      <div id="win-line"></div>
+    </div>
+
+    <div id="game-actions">
+      <button id="rematch-btn">Rematch</button>
+      <button id="menu-btn">↩️ Back to Menu</button>
+    </div>
+  </div>
+
+</div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+#app {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#status {
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+#board {
+  display: grid;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+
+  gap: 8px;
+}
+
+.cell {
+  border: 2px solid #444;
+  background: #222;
+
+  font-size: 40px;
+  font-weight: bold;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.cell:hover {
+  background: #333;
+}
+
+
+#board {
+  position: relative;
+}
+
+#win-line {
+  position: absolute;
+  height: 6px;
+  background: rgb(220, 253, 33);
+  border-radius: 10px;
+
+  display: none;
+
+  pointer-events: none;
+  z-index: 10;
+}
+
+
+
+#game-actions {
+  display: none;
+  margin-top: 25px;
+  gap: 10px;
+  justify-content: center;
+}
+
+#game-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+
+  background: #333;
+  color: white;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#game-actions button:hover {
+  background: #444;
+}
+
+
+#menu {
+  text-align: center;
+}
+
+#menu p {
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+#menu-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#menu-actions button {
+  width: 220px;
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #222;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#menu-actions button:hover {
+  background: #333;
+}
